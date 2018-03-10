@@ -1,0 +1,702 @@
+
+/**
+* Table of Contents:
+*
+* 01.0 - Universal
+* 02.0 - Header
+* 03.0 - Navigation
+* 04.0 - Featured Video
+* 05.0 - About Youtuber
+* 06.0 - Portfolio
+* 07.0 - Sponsor
+* 08.0 - Testimonial
+* 09.0 - Contact
+* 10.0 - Footer
+* 11.0 - Media query
+* -----------------------------------------------------------------------------
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  01 - Universal
+/////////////////////////////////////////////////////////////////////*/
+
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #6B6D6E;
+    transition: 0.4s ease all;
+    outline: none;
+}
+a:hover,a:active,a:focus{
+    text-decoration: none;
+    color: rgba(231, 76, 60, 1);
+    opacity: 0.9;
+    outline: none;
+}
+.btn {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    font-size: 1.2em;
+    transition: 0.4s ease all;
+}
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+.block_title {
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+.block_title:before,.block_title:after {
+    content: "";
+    background: #ccc;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    width: 42%;
+    vertical-align: middle;
+}
+.block_title:before {
+    right: 0.5em;
+    margin-left: -42%;
+}
+.block_title:after {
+    left: 0.5em;
+    margin-right: -42%;
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3.6em;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #fff;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  02 - Header 
+/////////////////////////////////////////////////////////////////////*/
+
+.header-left {
+    width: 50%;
+    float: left;
+    background-color: #EC6126;
+    position: absolute;
+    height: 100%;
+}
+
+.header-text {
+    color: #fff;
+    font-weight: 200;
+    margin: 26% 0%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.welcome {
+    font-size: 1.98em;
+}
+
+.header-title {
+    font-weight: 800;
+    margin: 10px 0px 15px 0px;
+}
+
+.author {
+    font-size: 1.75em;
+    letter-spacing: 7px;
+    word-spacing: 6px;
+    margin-top: 20px;
+}
+
+.subscribe {
+    margin-top: 12px;
+    float: right;
+}
+
+.subscribe-text {
+    font-size: 1.15em;
+}
+
+.header-right {
+    background: url(../img/header-right.png);
+    width: 50%;
+    float: right;
+    background-color: #030303;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 22%;
+}
+.chs{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*
+===========================================================================
+                3. Navigation
+===========================================================================
+*/
+
+
+#navigation{
+    background: #111;
+}
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo {
+    display: table;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.logo-text {
+    font-size: 3em;
+    padding: 0.2em 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu {
+    float: right;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 10px;
+}
+.dropdown-menu {
+    min-width: 240px;
+    right: 0;
+    left: auto;
+    border: 1px solid #6B6D6E;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em 2em;
+    margin-top: 5%;
+}
+.dropdown-menu ul li {
+    padding: 0.3em 0em 0.6em 0em;
+    font-size: 1.3em;
+    position: relative;
+}
+.dropdown-menu ul li a i {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    font-size: 25px;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 7px solid #fff;
+    float: right;
+    margin-top: -5%;
+    margin-right: 23px;
+}
+
+
+
+/*
+======================================================================
+            4. Featured Video
+========================================================================
+*/
+#featured {
+    padding: 7.5em 0em;
+}
+
+.featured-content {
+    padding: 50px 0px;
+}
+
+.latest_videos {
+    background: #ffffff;
+    width:100%;
+    position:relative;
+}
+
+.latest_videos .link_more {
+    position:absolute;
+    right:0;
+    top:2px;
+    color:#39b4ed;
+    font-size:13px;
+}
+
+.latest_item {
+    float:left;
+    margin:0 3px;
+}
+   
+/* First, define the common wrapper elements 
+   Padding-top is for the fixed height header of the embedded content */
+
+.youtubeWrapper {
+    /*position: relative;*/
+    padding-top: 30px; 
+    height: 0; 
+    /*overflow: hidden;*/
+    padding-bottom: 56.25%;
+}
+    
+/* For each content source, set the IFRAME to be top left and occupy 100% of width and height of the containing DIV wrapper */    
+.youtubeWrapper iframe,
+.youtubeWrapper object,
+.youtubeWrapper embed {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+#featured_videos {
+    margin:15px 0 0 0;
+}
+
+.latest_videos .prev, .latest_videos .next {
+    position:absolute;
+    top:48%;
+    left:0;
+    background:url(../img/arrow_latests.png) -10px 0 no-repeat;
+    width:80px;
+    height:163px;
+    text-align:center;
+}
+
+.latest_videos .next {
+    right:0;
+    left:auto;
+    background-position:-110px 0
+}
+
+.latest_videos .prev.disabled,
+.latest_videos .next.disabled {
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+
+/*
+=======================================================================
+         5. About Youtuber
+========================================================================
+*/
+
+#about {
+    padding: 7.5em 0em;
+    background-color: rgba(225, 231, 231, 0.33);
+}
+
+.about-content {
+    margin-top: 4em;
+}
+
+.about-description p {
+    line-height: 1.76em;
+}
+
+.find-fb {
+    background-color: #3B5998;
+}
+
+.find-twit {
+    background-color: #5EA9DD;
+}
+
+.find-link {
+    background-color: #0177B5;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 62px;
+    position: relative;
+    width: 90px;
+    height: 95px;
+}
+
+.find-fb:hover,
+.find-twit:hover,
+.find-link:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 #333;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+.find-fb:hover {
+    color: #3B5998;
+}
+
+.find-twit:hover {
+    color: #5EA9DD;
+}
+
+.find-link:hover {
+    color: #0177B5;
+}
+
+.social-icon i {
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+}
+
+.heading {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.65em;
+}
+
+/*
+=======================================================================
+            6. Portfolio
+========================================================================
+*/
+
+#portfolio .container {
+    width: 100%;
+    padding: 0px;
+}
+
+#portfolio .portfolio-items {
+    margin: 0px;
+}
+
+/* ==============================  Image hover effect ============================== */
+
+.grid {
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+.effect-zoe:hover figcaption, 
+.effect-zoe:hover h2, 
+.effect-zoe:hover p.icon-links a{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.effect-zoe .video-wrapper img{
+    opacity: 0.4;
+}
+
+.effect-zoe:hover .video-wrapper>img{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.effect-zoe figcaption{
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 3.75em;
+    /*background: rgba(0,0,0,0.75);*/
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+.grid  figcaption, .grid  figcaption > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid  figcaption{
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figcaption a img {
+    margin-top: 51px;
+}
+
+.grid .effect-zoe{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/*
+======================================================================
+                 7. Sponsors
+======================================================================
+*/
+
+#sponsor {
+    padding: 7.5em 0em;
+    background-color: rgba(225, 231, 231, 0.33);
+}
+
+.sponsor-content {
+    margin-top: 4em;
+}
+
+.sponsor-img {
+    border: 1px solid #E7E2E2;
+}
+
+.sponsor-img img {
+    opacity: 0.3;
+}
+
+.sponsor-img:hover img {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.sponsor-img:hover {
+    box-shadow: 0 1px 1px 0 rgba(213, 213, 213, 0.71);
+    border: 1px solid #B1B1B1;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+/* 
+===========================================================================
+                    8. Testimonial 
+ ==========================================================================
+ */
+
+#testimonial {
+    background: url(../img/testimonial-bg.png) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.testimonial-wrapper {
+    background-color: rgba(255, 76, 0, 0.79);
+    padding: 7.5em 0em;
+}
+.client-name {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.client-comment  {
+    padding: 40px 0px 25px 0px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//              09 - Contact
+/////////////////////////////////////////////////////////////////////*/
+
+#contact {
+    background: url(../img/contact-bg.png) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.contact-wrapper {
+    padding: 7.5em 0em;
+}
+
+.contact-block-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.block .address .address-desc .address-info {
+    background-color: transparent;
+    display: block;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid #999595;
+}
+
+.block .address .address-desc .address-info .address-info-icon {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.block .address .address-desc .address-info .address-info-icon i {
+    color: #de2920;
+    font-size: 21px;
+    padding: 45% 0%;
+    position: relative;
+}
+
+.block .address .address-desc .address-info .address-info-icon i.fa-map-marker {
+    padding-top: 25px;
+}
+
+.block .address .address-desc .address-info .address-info-desc {
+    background-color: transparent;
+    display: inline-block;
+    line-height: 1.83em;
+    padding: 11px 15px;
+    position: relative;
+    border-left: 1px solid #999595;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #999595;
+  padding: 13px 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type="submit"] {
+    background: #de2920;
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 13px;
+    -webkit-transition: 0.5s background linear;
+       -moz-transition: 0.5s background linear;
+        -ms-transition: 0.5s background linear;
+         -o-transition: 0.5s background linear;
+            transition: 0.5s background linear;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.like-box {
+    width: 360px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//                    10 - Footer 
+/////////////////////////////////////////////////////////////////////*/
+
+footer {
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    padding: 15px 0px;
+}
+.copyright {
+    margin: 0;
+    padding: 10px 0px;
+    float: left;
+}
+.designed {
+    margin: 0;
+    padding: 10px 0px;
+    float: right;
+}
+.designed a:hover {
+    color: #e66f69;
+}
+
+
+
+
+/* 
+===================================================================
+                        11. Media Query
+====================================================================
+ */
+
+@media (max-width: 868px){
+    .latest_item
+    {
+        opacity: 1!important;
+    }
+}
+
+@media (max-width: 767px){
+    .copyright, .designed {
+        text-align: center;
+        float: none;
+    }
+}
+
+@media (min-width: 655px) and (max-width: 1024px) {
+    .grid {
+        width: 25%;
+    }
+
+    .grid figcaption a img {
+        margin-top: 26px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .grid {
+        width: 50%;
+    }
+
+    .grid figcaption a img {
+        margin-top: 18px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+
+    .grid figcaption a img {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1025px){
+    .grid
+    {
+        height: 219px;
+    }
+}
